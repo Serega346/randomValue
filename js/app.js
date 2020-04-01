@@ -1,4 +1,5 @@
-const e = document.getElementById('n');
+JsBarcode(".barcode").init();
+const img = document.querySelector('.barcode');
 
 const getRandomInt = (min = 1000, max= 9999) => {
     min = Math.ceil(min);
@@ -8,5 +9,6 @@ const getRandomInt = (min = 1000, max= 9999) => {
 
 
 const setValue = () => {
-    e.textContent = getRandomInt();
+    img.setAttribute('jsbarcode-value', '482011528'+ getRandomInt());
+    JsBarcode(".barcode").init();
 };
