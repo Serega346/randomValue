@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
     <div>
         <div id="randomINT">
             <svg class="barcode"
-                 jsbarcode-value="1234567890000"
-                 jsbarcode-textmargin="3"
                  jsbarcode-fontsize="24"
                  jsbarcode-height="105"
+                 jsbarcode-textmargin="3"
+                 jsbarcode-value="1234567890000"
                  jsbarcode-width="2">
             </svg>
         </div>
         <div class="btn">
-            <button type="submit" onclick="setValue()">Generate</button>
+            <button onclick="setValue()" type="submit">Generate</button>
         </div>
     </div>
 </div>
